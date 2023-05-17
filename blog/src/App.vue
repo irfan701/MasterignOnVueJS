@@ -1,23 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue'
-import Interpolation from "./components/Interpolation.vue";
-
-
+import Conditional from "./components/Conditional.vue";
 </script>
 
 <template>
-    <HelloWorld msg="You did  this!" />
-  <br>
-    <Home/>
-    <br>
-    <Interpolation/>
+<Conditional/>
 </template>
 
 <style>
-  h1{
-    color: orange;
-  }
+
 </style>
 
 
