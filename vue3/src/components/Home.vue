@@ -1,13 +1,28 @@
-<script setup>
-
-</script>
-
 <template>
-    <h1>Hello World</h1>
+    <h1>Pass Data To Child Component</h1>
+    <br>
+    <Child name="Irfan Hossain" :user="user" :getData="getData"/>
 </template>
 
-<style scoped>
-    h1{
-        color: red;
+<script>
+    import Child from "./Child.vue";
+    export default {
+        name: "Home",
+        components:{
+            Child
+        },data(){
+            return{
+                user:{name:"Hasan",email: "hasan@gmail.com"}
+            }
+        },
+        methods:{
+            getData() {
+                alert("Parent Function Call")
+            }
+        }
     }
+</script>
+
+<style scoped>
+
 </style>
